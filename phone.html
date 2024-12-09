@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<link rel="stylesheet" href="mine.css">
+<style>
+    
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style-type: none;
+ 
+body{
+    /* example test */
+    /* background-color: #ed13ed; */
+    background-color: #000;
+    
+
+}
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* example test */
+    /* background-color: yellowgreen;  */
+    background-color: black;
+    position: fixed;
+    top: 5%;
+    left: 50px;
+    width: 100vw;
+   
+
+}
+
+
+
+.item2 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60%;
+    gap: 3rem;
+    margin: 10px;
+    
+    
+}
+ul li a{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.special{
+    color: tomato;
+}
+
+.underline{
+    border-bottom: 2px solid tomato;
+}
+
+div h1{
+    font-size: 2.4rem;
+    color: white;
+    /* margin-left:  20px;  */
+}
+
+li a:hover{
+    border-bottom: 2px solid tomato;
+    color: tomato;
+}
+
+
+/* MAin content */
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+}
+
+.img img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 6px;
+
+}
+
+span{
+    color: tomato;
+}
+
+.main2{
+    max-width: 86%;
+    max-height: 94%;
+}
+
+.main2 h1{
+    font-size: 5rem;
+}
+
+.main2 h2{
+    font-size: 3rem;
+    line-height: 43px;
+    color: white;
+}
+
+.main2 p{
+    margin-right:50px ;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.btn {
+    margin-top: 50px;
+    /* background-color: tomato; */
+}
+
+.btn a{
+    /* margin-top: 90px; */
+    background-color: black;
+    border-radius: 30px;
+    color: tomato;
+    padding: 20px;
+    letter-spacing: 5px;
+    border: 3px solid tomato;
+    font-size: 1.7rem;
+}
+/* ul li{
+    border: 2px solid gold;
+    margin: 30px;
+    padding: 20px;
+} */
+
+@media screen and (max-width:900px) {
+    .item2 ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 70%;
+        gap: 2rem;
+        margin: 3px;
+        
+        
+    }
+
+    @media screen and (max-width:780px) {
+        ul li a{
+            font-size: 1rem;
+            color: white;
+        }
+
+        .img img{
+            width: 80%;
+            border-radius: 50%;
+            margin-left: 6px;
+        
+        }
+        .main2 h1{
+            font-size: 3.5rem;
+        }
+        .main2 h2{
+            font-size: 1.5rem;
+            line-height: 33px;
+            color: white;
+        }
+
+        .main2 p{
+            margin-right:45px ;
+            letter-spacing: 2.5px;
+            font-size: 1.7rem;
+            color: white;
+        }
+    
+}
+
+@media screen and (max-width:650px) {
+    .item2 ul{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        gap: 2rem;
+        margin: 3px;
+    }
+    .container .item1{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:520px) { 
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width:420px) { 
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        margin-top: 60%;
+    }
+}
+
+
+
+
+ 
+</style>
+<body>
+    
+    <div class="container">
+        <div class="item1">
+            <h1 class="special"> Eyinade</h1>
+        </div>
+        <div class="item2">
+        <ul>
+            <ul>
+                <li><a href="" class="special underline"> Home</a></li>
+                <li><a href=""> Services </a></li>
+                <li><a href=""> Skills</a></li>
+                <li><a href=""> Education</a></li>
+                <li><a href=""> Experience </a></li>
+                <li><a href=""> Contact</a></li>
+            </ul> 
+        </div>
+
+    </div>
+
+    <main class="main-container">
+        <div class="img"> 
+            <img src="./cloth.png" alt="">
+
+        </div>
+        <div class="main2">
+            <h1> Hi, it's <span> Eyinade </span></h1>
+            <h2> I am a <span> Web Developer </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat voluptas iure animi. Distinctio voluptas modi libero quisquam! Eius temporibus molestias facilis repellat tenetur, quaerat voluptate possimus adipisci dicta quibusda </span>m?</p>
+            <!-- <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">   
+            </div> -->
+            <div class="btn">
+                <a href=""> Hire me</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
